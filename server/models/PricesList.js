@@ -12,6 +12,19 @@ const PricesListSchema = new Schema({
 
 }, { collection })
 
+PricesListSchema.statics.listUnicType = async function(err, callback) {
+  const result = await this.find({},{type:1}, function(error, list){})
+  const aList = []
+  result.forEach((value) => aList.push(value.type) )
+  return aList.filter((v, i, a) => a.indexOf(v) === i)
+}
+PricesListSchema.statics.listUnicleather = async function(err, callback) {
+  const result = await this.find({},{leather:1}, function(error, list){})
+  const aList = []
+  result.forEach((value) => aList.push(value.leather) )
+  return aList.filter((v, i, a) => a.indexOf(v) === i)
+}
+
 PricesListSchema.plugin(passportLocalMongoose)
 
 module.exports = mongoose.model('PricesList', PricesListSchema)
