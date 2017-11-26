@@ -24,6 +24,12 @@ PricesListSchema.statics.listUnicleather = async function(err, callback) {
   result.forEach((value) => aList.push(value.leather) )
   return aList.filter((v, i, a) => a.indexOf(v) === i)
 }
+PricesListSchema.statics.exist = async function exist(query) {
+  const result = await this.findOne(query)
+  if(result) return true
+  return false
+
+}
 
 PricesListSchema.plugin(passportLocalMongoose)
 

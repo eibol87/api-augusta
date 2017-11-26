@@ -11,7 +11,7 @@ const updateCustomer = require('./handlers/put/updateCustomer')
 const addCustomer = require('./handlers/post/addCustomer')
 const updatePricesList = require('./handlers/put/updatePricesList')
 const getListArticleType = require('./handlers/getListArticleType')
-const addPricesList = require('./handlers/post/addPricesList')
+const addArticle = require('./handlers/post/addArticle')
 
 router.use( passport.authenticate('jwt', { session: false } ) )
 
@@ -22,7 +22,7 @@ router.put('/pricesList',updatePricesList)
 router.get('/pricesList',getPricesList)
 router.get('/listArticlesType/:list',getListArticleType)
 router.post('/customer',addCustomer)
-router.post('/pricesList',addPricesList)
+router.post('/pricesList',addArticle)
 router.get('/articles', getArticles)
 router.get('/deliveryNotes', getDeliveryNotes)
 
