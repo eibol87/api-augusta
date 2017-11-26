@@ -4,7 +4,7 @@ async function addArticle( req, res ) {
   const article = {type:req.body.type,leather:req.body.leather}
   const checkArticleExist =await PricesList.exist(article)
   if(checkArticleExist){
-    res.status(401).send("Article exist")
+    res.status(201).send("Article exist")
     return false
   }
  
