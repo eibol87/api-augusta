@@ -11,6 +11,7 @@ const getListArticleType = require('./handlers/getListArticleType')
 
 const updateCustomer = require('./handlers/put/updateCustomer')
 const updatePricesList = require('./handlers/put/updatePricesList')
+const updateArticle = require('./handlers/put/updateArticle')
 
 const addCustomer = require('./handlers/post/addCustomer')
 const addArticle = require('./handlers/post/addArticle')
@@ -24,6 +25,7 @@ router.get('/articles', getArticles)
 router.get('/deliveryNotes', getDeliveryNotes)
 router.put('/customer/:id',updateCustomer)
 router.put('/pricesList/:id',updatePricesList)
+router.put('/article/:id',updateArticle)
 router.post('/customer',addCustomer)
 
 router.route('/pricesList')
