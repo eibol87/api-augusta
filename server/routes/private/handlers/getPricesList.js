@@ -7,7 +7,7 @@ async function getPricesList( req, res ) {
     if(result){
         res.status(200).json(result)
     }else{
-        res.status(401).send("not found article")
+        res.status(201).send("not found article")
     }
   }else{
     PricesList.find({}, function(err, pricesList) {

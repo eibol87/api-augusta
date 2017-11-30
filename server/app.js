@@ -22,8 +22,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 app.use( (req,res,next) => {
-  const { method, path, body,state,customer } = req
-  debug({ method, path, body,state,customer })
+  const { method, path, body,state,customer,query } = req
+  debug({ method, path, body,state,customer,query })
   next()
 })
 
