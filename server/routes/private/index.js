@@ -9,6 +9,7 @@ const getPricesList = require('./handlers/getPricesList')
 const getDeliveryNotes = require('./handlers/getDeliveryNotes')
 const getListArticleType = require('./handlers/getListArticleType')
 const getColors = require('./handlers/getColors')
+const getComplements = require('./handlers/getComplements')
 
 const updateCustomer = require('./handlers/put/updateCustomer')
 const updatePricesList = require('./handlers/put/updatePricesList')
@@ -17,10 +18,11 @@ const updateArticle = require('./handlers/put/updateArticle')
 const addCustomer = require('./handlers/post/addCustomer')
 const addArticle = require('./handlers/post/addArticle')
 const addColor = require('./handlers/post/addColor')
+const addComplements = require('./handlers/post/addComplements')
 
 router.use( passport.authenticate('jwt', { session: false } ) )
 
-router.get('/colors',getColors)
+
 router.get('/customers',getCustomers)
 router.get('/customers/payments', getCustomersPayments)
 router.get('/listArticlesType/:list',getListArticleType)
@@ -31,11 +33,17 @@ router.put('/pricesList/:id',updatePricesList)
 router.put('/article/:id',updateArticle)
 
 router.post('/customer',addCustomer)
-router.post('/colors',addColor)
+
+router.route('/colors')
+  .post(addColor)
+  .get(getColors)
 
 router.route('/pricesList')
   .post(addArticle)
   .get(getPricesList)
 
+router.route('/complements')
+  .get(getComplements)
+  .post(addComplements)
 
 module.exports = router
