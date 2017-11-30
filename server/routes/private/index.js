@@ -22,7 +22,6 @@ const addComplements = require('./handlers/post/addComplements')
 
 router.use( passport.authenticate('jwt', { session: false } ) )
 
-
 router.get('/customers',getCustomers)
 router.get('/customers/payments', getCustomersPayments)
 router.get('/listArticlesType/:list',getListArticleType)

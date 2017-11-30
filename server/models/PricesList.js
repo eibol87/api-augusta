@@ -26,10 +26,10 @@ PricesListSchema.statics.listUnicleather = async function(err, callback) {
 }
 PricesListSchema.statics.exist = async function exist(query) {
   const result = await this.findOne(query)
-  if(result) return true
+  if(result) return result
   return false
-
 }
+
 
 PricesListSchema.plugin(passportLocalMongoose)
 
