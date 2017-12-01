@@ -16,16 +16,17 @@ const updatePricesList = require('./handlers/put/updatePricesList')
 const updateArticle = require('./handlers/put/updateArticle')
 
 const addCustomer = require('./handlers/post/addCustomer')
-const addArticle = require('./handlers/post/addArticle')
+const addPriceList = require('./handlers/post/addPriceList')
 const addColor = require('./handlers/post/addColor')
 const addComplements = require('./handlers/post/addComplements')
+const addArticle = require('./handlers/post/addArticle')
+
 
 router.use( passport.authenticate('jwt', { session: false } ) )
 
 router.get('/customers',getCustomers)
 router.get('/customers/payments', getCustomersPayments)
 router.get('/listArticlesType/:list',getListArticleType)
-router.get('/articles', getArticles)
 router.get('/deliveryNotes', getDeliveryNotes)
 router.put('/customer/:id',updateCustomer)
 router.put('/pricesList/:id',updatePricesList)
@@ -33,12 +34,16 @@ router.put('/article/:id',updateArticle)
 
 router.post('/customer',addCustomer)
 
+router.route('/articles')
+  .get(getArticles)
+  .post(addArticle)
+
 router.route('/colors')
   .post(addColor)
   .get(getColors)
 
 router.route('/pricesList')
-  .post(addArticle)
+  .post(addPriceList)
   .get(getPricesList)
 
 router.route('/complements')
