@@ -13,6 +13,8 @@ mongoimport --db augusta --collection customers --file customers.json
 mongoimport --db augusta --collection deliveryNotes --file deliveryNotes.json
 mongoimport --db augusta --collection pricesList --file pricesList.json
 mongoimport --db augusta --collection users --file users.json
+mongoimport --db augusta --collection colors --file colors.json
+mongoimport --db augusta --collection complements --file complements.json
 ```
 __Variables de entorno__:
 
