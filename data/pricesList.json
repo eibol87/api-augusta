@@ -1,10 +1,14 @@
 {"_id":{"$oid":"5a0c097363bb9ae2b6d99283"},"type":"Falda","leather":"Ante","base_price":12,"assign_prices":[20,18,19],"prices_per_customer":[{"id_customer":1,"prices":20}]}
-{"_id":{"$oid":"5a0c097363bb9ae2b6d99284"},"type":"Pantalon","leather":"Ante","base_price":20,"assign_prices":[20],"prices_per_customer":[{"id_customer":1,"prices":20}]}
-{"_id":{"$oid":"5a0c097363bb9ae2b6d99285"},"type":"Nórdico","base_price":12,"assign_prices":[15,21,17],"prices_per_customer":[{"id_customer":1,"prices":20}]}
-{"_id":{"$oid":"5a0c097363bb9ae2b6d99286"},"type":"Plumas","base_price":7,"assign_prices":[20],"prices_per_customer":[{"id_customer":1,"prices":20}]}
-{"_id":{"$oid":"5a0c097363bb9ae2b6d99287"},"type":"Cazadora","leather":"Pekari","base_price":12,"assign_prices":[20,18],"prices_per_customer":[{"id_customer":1,"prices":20}]}
-{"_id":{"$oid":"5a0c097363bb9ae2b6d99288"},"type":"Piel de vaca","base_price":30,"assign_prices":[20,17],"prices_per_customer":[{"id_customer":1,"prices":20}]}
-{"_id":{"$oid":"5a0c097363bb9ae2b6d99289"},"type":"Vestido","base_price":10,"assign_prices":[20,24],"prices_per_customer":[{"id_customer":1,"prices":20}]}
-{"_id":{"$oid":"5a0c097363bb9ae2b6d9928a"},"type":"Chaqueta","leather":"Nobuk color","base_price":15,"assign_prices":[20,20,15],"prices_per_customer":[{"id_customer":1,"prices":20}]}
-{"_id":{"$oid":"5a0c097363bb9ae2b6d9928b"},"type":"Cortina","base_price":7,"assign_prices":[20,20,14],"prices_per_customer":[{"id_customer":1,"prices":20}]}
-{"_id":{"$oid":"5a0c097363bb9ae2b6d9928c"},"type":"Chaqutea","leather":"Nobuk","base_price":20,"assign_prices":[12,15,25],"prices_per_customer":[{"id_customer":1,"prices":20}]}
+{"_id":{"$oid":"5a0c097363bb9ae2b6d99284"},"type":"Falda","leather":"Ante","base_price":20,"assign_prices":[20],"prices_per_customer":[{"id_customer":1,"prices":20}]}
+{"_id":{"$oid":"5a0c097363bb9ae2b6d99285"},"type":"Nórdico","leather":"Otros","base_price":12,"assign_prices":[15,21,17],"prices_per_customer":[{"id_customer":1,"prices":20}]}
+{"_id":{"$oid":"5a0c097363bb9ae2b6d99286"},"type":"Plumas","leather":"Otros","base_price":7,"assign_prices":[20],"prices_per_customer":[{"id_customer":1,"prices":20}]}
+{"_id":{"$oid":"5a0c097363bb9ae2b6d99287"},"type":"Cazadora","leather":"Pekari","base_price":21,"assign_prices":[20,18],"prices_per_customer":[{"id_customer":1,"prices":20}]}
+{"_id":{"$oid":"5a0c097363bb9ae2b6d99288"},"type":"Piel de vaca","leather":"Otros","base_price":30,"assign_prices":[20,17],"prices_per_customer":[{"id_customer":1,"prices":20}]}
+{"_id":{"$oid":"5a0c097363bb9ae2b6d99289"},"type":"Vestido","leather":"Otros","base_price":10,"assign_prices":[20,24],"prices_per_customer":[{"id_customer":1,"prices":20}]}
+{"_id":{"$oid":"5a0c097363bb9ae2b6d9928a"},"type":"Chaqueta","leather":"Nobuk color","base_price":17,"assign_prices":[20,20,15],"prices_per_customer":[{"id_customer":1,"prices":20}]}
+{"_id":{"$oid":"5a1b312dda505167f0e83649"},"type":"Falda","leather":"Otros","base_price":12,"prices_per_customer":[],"assign_prices":[],"__v":0}
+{"_id":{"$oid":"5a1d5d5840bb55094085834c"},"type":"Falda","leather":"vategoria ","base_price":20,"prices_per_customer":[],"assign_prices":[],"__v":0}
+{"_id":{"$oid":"5a2065d59206a9714646e6e3"},"type":"Chaqueta","leather":"Ante","base_price":12,"prices_per_customer":[],"assign_prices":[],"__v":0}
+{"_id":{"$oid":"5a208b52f9e85c764d4814bc"},"type":"Falda","leather":"Nobuk color","base_price":12,"prices_per_customer":[],"assign_prices":[],"__v":0}
+{"_id":{"$oid":"5a209728161de979e61b8b01"},"type":"Chaqueta","leather":"vategoria ","base_price":12,"prices_per_customer":[],"assign_prices":[],"__v":0}
+{"_id":{"$oid":"5a209ad1b178fd7a1f067a65"},"type":"Cazadora","leather":"Otros","base_price":12,"prices_per_customer":[],"assign_prices":[],"__v":0}
